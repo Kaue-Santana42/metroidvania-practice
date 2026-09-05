@@ -1,3 +1,13 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# exported executables
+*.apk
+*.aab
+*.exe
+*.zip
+*.a
+*.o
+*.so
+*.dylib
