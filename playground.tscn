@@ -26,6 +26,16 @@ texture = SubResource("GradientTexture2D_g4v7s")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="main_floor/StaticBody2D" unique_id=1754841391]
 shape = SubResource("RectangleShape2D_g4v7s")
 
+[node name="ceiling" type="Sprite2D" parent="." unique_id=504100413]
+position = Vector2(240, -9)
+scale = Vector2(16, 1.4375)
+texture = SubResource("GradientTexture2D_g4v7s")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="ceiling" unique_id=2125202471]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ceiling/StaticBody2D" unique_id=2111251807]
+shape = SubResource("RectangleShape2D_g4v7s")
+
 [node name="left_wall" type="Sprite2D" parent="." unique_id=949891022]
 position = Vector2(1.4999971, 137.49998)
 scale = Vector2(1.0312502, 8.84375)
@@ -49,9 +59,9 @@ position = Vector2(0, 8.910243e-07)
 shape = SubResource("RectangleShape2D_g4v7s")
 
 [node name="ramp" type="Sprite2D" parent="." unique_id=1986489198]
-position = Vector2(304, 204.99998)
+position = Vector2(318.74493, 228.22008)
 rotation = 1.0050329
-scale = Vector2(1.0312502, 6.7031255)
+scale = Vector2(2.7503815, 6.7031255)
 texture = SubResource("GradientTexture2D_g4v7s")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="ramp" unique_id=461010898]
