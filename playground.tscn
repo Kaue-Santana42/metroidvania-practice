@@ -82,3 +82,13 @@ shape = SubResource("RectangleShape2D_g4v7s")
 
 [node name="Player" parent="." unique_id=120384565 instance=ExtResource("1_rupst")]
 position = Vector2(172, 84)
+
+[node name="left_platform" type="Sprite2D" parent="." unique_id=1133400607]
+position = Vector2(69.82644, 235.22838)
+scale = Vector2(3.385847, 2.2017741)
+texture = SubResource("GradientTexture2D_g4v7s")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="left_platform" unique_id=1268997588]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="left_platform/StaticBody2D" unique_id=1477631818]
+shape = SubResource("RectangleShape2D_g4v7s")
